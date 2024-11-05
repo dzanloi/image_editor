@@ -134,11 +134,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OneDrive\\Documents\\image_editor\\ImageEditor\\ImageEditor.csproj",
+      "projectUniqueName": "D:\\Downloads folder\\image_editor\\ImageEditor\\ImageEditor.csproj",
       "projectName": "ImageEditor",
-      "projectPath": "D:\\OneDrive\\Documents\\image_editor\\ImageEditor\\ImageEditor.csproj",
+      "projectPath": "D:\\Downloads folder\\image_editor\\ImageEditor\\ImageEditor.csproj",
       "packagesPath": "C:\\Users\\carre\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive\\Documents\\image_editor\\ImageEditor\\obj\\",
+      "outputPath": "D:\\Downloads folder\\image_editor\\ImageEditor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

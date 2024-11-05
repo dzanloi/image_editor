@@ -18,3 +18,24 @@ D:\OneDrive\Documents\image_editor\ImageEditor\obj\Debug\net9.0-windows\refint\I
 D:\OneDrive\Documents\image_editor\ImageEditor\obj\Debug\net9.0-windows\ImageEditor.pdb
 D:\OneDrive\Documents\image_editor\ImageEditor\obj\Debug\net9.0-windows\ImageEditor.genruntimeconfig.cache
 D:\OneDrive\Documents\image_editor\ImageEditor\obj\Debug\net9.0-windows\ref\ImageEditor.dll
+D:\Downloads folder\image_editor\ImageEditor\bin\Debug\net9.0-windows\ImageEditor.exe
+D:\Downloads folder\image_editor\ImageEditor\bin\Debug\net9.0-windows\ImageEditor.deps.json
+D:\Downloads folder\image_editor\ImageEditor\bin\Debug\net9.0-windows\ImageEditor.runtimeconfig.json
+D:\Downloads folder\image_editor\ImageEditor\bin\Debug\net9.0-windows\ImageEditor.dll
+D:\Downloads folder\image_editor\ImageEditor\bin\Debug\net9.0-windows\ImageEditor.pdb
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\ImageEditor.csproj.AssemblyReference.cache
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\MainWindow.baml
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\MainWindow.g.cs
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\App.g.cs
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\ImageEditor_MarkupCompile.cache
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\ImageEditor.g.resources
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\ImageEditor.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\ImageEditor.AssemblyInfoInputs.cache
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\ImageEditor.AssemblyInfo.cs
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\ImageEditor.csproj.CoreCompileInputs.cache
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\ImageEditor.sourcelink.json
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\ImageEditor.dll
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\refint\ImageEditor.dll
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\ImageEditor.pdb
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\ImageEditor.genruntimeconfig.cache
+D:\Downloads folder\image_editor\ImageEditor\obj\Debug\net9.0-windows\ref\ImageEditor.dll
