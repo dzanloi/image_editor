@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "bL0Fs0CoIIM=",
+  "success": true,
+  "projectFilePath": "D:\\OneDrive\\Documents\\image_editor\\ImageEditor\\ImageEditor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\carre\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\carre\\.nuget\\packages\\system.drawing.common\\8.0.10\\system.drawing.common.8.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
