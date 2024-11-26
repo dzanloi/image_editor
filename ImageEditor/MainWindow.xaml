@@ -5,12 +5,14 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Edit">
-                <MenuItem Header="Grayscale" Click="Grayscale_Click"/>
-                <MenuItem Header="Color Inversion" Click="InvertColors_Click"/>
-                <MenuItem Header="Histogram" Click="ShowHistogram_Click"/>
-                <MenuItem Header="Sepia" Click="Sepia_Click"/>
-                <MenuItem Header="Original" Click="Original_Click"/>
-            </MenuItem>
+            <MenuItem Header="Grayscale" Click="Grayscale_Click"/>
+            <MenuItem Header="Color Inversion" Click="InvertColors_Click"/>
+            <MenuItem Header="Histogram" Click="ShowHistogram_Click"/>
+            <MenuItem Header="Sepia" Click="Sepia_Click"/>
+            <MenuItem Header="Original" Click="Original_Click"/>
+            <MenuItem Header="Count Coins" Click="CountCoins_Click"/>
+        </MenuItem>
+
         </Menu>
         <Grid>
             <Grid.ColumnDefinitions>

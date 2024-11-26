@@ -3,6 +3,9 @@ using System.Drawing;
 using System.IO;
 using System.Windows;
 using System.Windows.Media.Imaging;
+using Emgu.CV;
+using Emgu.CV.CvEnum;
+using Emgu.CV.Structure;
 
 namespace ImageEditor
 {
@@ -80,6 +83,64 @@ namespace ImageEditor
             return histogram;
         }
 
+        private void CountCoins_Click(object sender, RoutedEventArgs e)
+        {
+            if (originalImage == null) {
+                MessageBox.Show("Please select an image first.", "No Image", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            Bitmap bitmap = BitmapImageToBitmap(originalImage);
+
+            // Convert to grayscale and count coins
+            int coinCount = CountCoinsInImage(bitmap);
+
+            // Display the result
+            MessageBox.Show($"Total number of coins: {coinCount}", "Coin Count", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+
+        private int CountCoinsInImage(Bitmap grayBitmap)
+        {
+            // Convert Bitmap to Mat (Emgu CV's image format)
+            Mat image = BitmapToMat(grayBitmap);
+
+            // Apply GaussianBlur to reduce noise
+            CvInvoke.GaussianBlur(image, image, new System.Drawing.Size(9, 9), 2);
+
+            // Detect circles using Hough Circle Transform
+            CircleF[] circles = CvInvoke.HoughCircles(
+                image,
+                HoughModes.Gradient,
+                dp: 1,
+                minDist: 20,
+                param1: 100,
+                param2: 30,
+                minRadius: 10,
+                maxRadius: 100
+            );
+
+            // Return the number of detected circles
+            return circles.Length;
+        }
+
+
+        private Mat BitmapToMat(Bitmap bitmap)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Bmp);
+                byte[] imageData = ms.ToArray();
+                
+                Mat mat = new Mat();
+                CvInvoke.Imdecode(imageData, ImreadModes.Grayscale, mat);
+                return mat;
+            }
+        }
+
+
+
+
         private Bitmap ApplySepia(Bitmap original)
         {
             for (int y = 0; y < original.Height; y++)
@@ -145,12 +206,9 @@ namespace ImageEditor
             }
         }
 
-        private Bitmap MakeGrayscale(Bitmap original)
-        {
-            for (int y = 0; y < original.Height; y++)
-            {
-                for (int x = 0; x < original.Width; x++)
-                {
+        private Bitmap MakeGrayscale(Bitmap original) {
+            for (int y = 0; y < original.Height; y++) {
+                for (int x = 0; x < original.Width; x++) {
                     System.Drawing.Color originalColor = original.GetPixel(x, y);
                     int grayScale = (int)((originalColor.R * 0.3) + (originalColor.G * 0.59) + (originalColor.B * 0.11));
                     System.Drawing.Color grayColor = System.Drawing.Color.FromArgb(originalColor.A, grayScale, grayScale, grayScale);
